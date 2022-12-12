@@ -90,7 +90,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
         else:
             print(eval(args[0])().id)
-            models.storage.save
+            models.storage.save()
 
     def do_show(self, arg):
         """
